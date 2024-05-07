@@ -1,0 +1,41 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.titulo {
+    text-align: center;
+    padding: 20px;
+    margin-top: 10%;
+}
+
+.titulo p {
+    font-size: 50px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.icon {
+    padding: 20px;
+}
+
+.icon img {
+    width: 150px;
+    height: auto;
+}
+
+.icon p {
+    font-size: 20px;
+    text-align: center;
+}
