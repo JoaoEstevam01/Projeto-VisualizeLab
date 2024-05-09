@@ -172,3 +172,86 @@ main {
     gap: 14px;
 }
 
+/*Painel de vendas, despesas e renda*/
+
+.main2 {
+    margin-top: 1.4rem;
+}
+
+.main2 .data{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+
+.main2 .date input[type="date"]{
+    background: transparent;
+    color: #000;
+}
+
+.main2 .conhecimento{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+.main2 .conhecimento > div{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.main2 .conhecimento > div:hover {
+    box-shadow: none;
+}
+
+.main2 .conhecimento > div span{
+    background-color: #02afc5;
+    padding: 0.3rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+}
+
+.main2 .conhecimento > div.despesas span{
+    background-color: 	#7B2CBF;
+}
+
+.main2 .conhecimento > div.renda span{
+    background-color: #1466c3;
+}
+
+.main2 .conhecimento > div .media{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main2 .conhecimento h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+.main2 .conhecimento .progresso{
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+.main2 .conhecimento svg {
+    width: 7rem;
+    height: 7rem;
+}
+
+.main2 .conhecimento svg circle{
+    fill: none;
+    stroke: #02afc5;
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 92;
+}
