@@ -115,7 +115,7 @@
                     <div class="media">
                         <div class="esquerda">
                             <h3>Total de Vendas</h3>
-                            <h1>R$100,043</h1>
+                            <h1>R$99,043</h1>
                         </div>
                         <div class="progresso">
                             <svg>
@@ -137,14 +137,14 @@
                     <div class="media">
                         <div class="esquerda">
                             <h3>Total de Despesas</h3>
-                            <h1>R$84,302</h1>
+                            <h1>R$54,302</h1>
                         </div>
                         <div class="progresso">
                             <svg>
                                 <circle cx="38" cy="38" r="36"></circle>
                             </svg>
                             <div class="numeros">
-                                <p>54%</p>
+                                <p>64%</p>
                             </div>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
                     Em Estoque
                     <div class="media">
                         <div class="esquerda">
-                            <h3>Total de Vendas</h3>
+                            <h3>Total da Renda</h3>
                             <h1>R$70,043</h1>
                         </div>
                         <div class="progresso">
@@ -174,9 +174,41 @@
                 </div>
                 <!--FIM DA *Renda*-->
 
+                <div class="acessos">
+                    <span class="material-icon"><img src="/img/visu.svg" alt=""></span>
+                    Acessos ao Site
+                    <div class="media">
+                        <div class="esquerda">
+                            <h3>Total de Acessos</h3>
+                            <h1>1000</h1>
+                            <h5>(Perda de 5% devido a queda<br> momentânia do site)</h5>
+                        </div>
+                        <div class="progresso">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="numeros">
+                                <p>30%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Últimas 24 horas</small>
+                </div>
+                <!--FIM DE *Acessos*-->
 
-            </div>
+                <div class="chart-container">
+                    <span class="material-icon"><img src="/img/Icon-grafico6meses.svg" alt=""></span>
+                    Últimos 6 Meses de Vendas
+                    <canvas id="barChart"></canvas>
+                </div>
+                
+                <div class="grafico2">
+                    <span class="material-icon"><img src="/img/grafico2anostime.svg" alt=""></span>
+                    Time - 2 anos
+                    <canvas id="rendimentoChart"></canvas>
+                </div>
         </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="sidebar.js"></script>
 </body>
 </html>

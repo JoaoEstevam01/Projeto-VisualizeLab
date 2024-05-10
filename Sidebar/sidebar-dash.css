@@ -8,31 +8,35 @@
 }
 
 body {
+    background-image: url(/img/BackgroundVisualize.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
-    min-height: 100vh;
-    background-color: #e3e9f7;
+
 }
 
 main {
+    margin-left: 80px;
     padding: 20px;
-    position: fixed;
+    position: relative;
     z-index: 1;
-    padding-left: calc(82px + 20px);
 }
 
 /*Configurações da sidebar*/
 #sidebar {
-    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #161d2a;
-    height: 100vh;
+    height: 100vh;  
     border-radius: 0px 18px 18px 0px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
     transition: all .5s;
     min-width: 82px;
-    z-index: 2;
+    z-index: 999;
 }
 
 #sidebar_conteudo {
@@ -181,7 +185,7 @@ main {
 .main2 .data{
     display: inline-block;
     margin-top: 1rem;
-    padding: 0.5rem 1.6rem;
+    padding: 0.5rem;
 }
 
 .main2 .date input[type="date"]{
@@ -192,15 +196,15 @@ main {
 .main2 .conhecimento{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
+    gap: 3rem;
 }
 
 .main2 .conhecimento > div{
-    background: var(--color-white);
-    padding: var(--card-padding);
-    border-radius: var(--card-border-radius);
+    background: #fff ;
+    padding: 20px;
+    border-radius: 10px;
     margin-top: 1rem;
-    box-shadow: var(--box-shadow);
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 
 .main2 .conhecimento > div:hover {
@@ -210,7 +214,7 @@ main {
 .main2 .conhecimento > div span{
     background-color: #02afc5;
     padding: 0.3rem;
-    border-radius: 50%;
+    border-radius: 10%;
     color: white;
     font-size: 2rem;
 }
@@ -221,6 +225,18 @@ main {
 
 .main2 .conhecimento > div.renda span{
     background-color: #1466c3;
+}
+
+.main2 .conhecimento > div.acessos span{
+    background-color: #0000aa;
+}
+
+.main2 .conhecimento > div.chart-container span{
+    background-color: rgba(255, 99, 132, 1) ;
+}
+
+.main2 .conhecimento > div.grafico2 span {
+    background-color: #FDB32F;
 }
 
 .main2 .conhecimento > div .media{
@@ -255,3 +271,75 @@ main {
     stroke-dasharray: 110;
     stroke-dashoffset: 92;
 }
+
+.main2 .conhecimento .vendas svg circle {
+    stroke: #02afc5;
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+.main2 .conhecimento .despesas svg circle {
+    stroke: #7B2CBF;
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+
+.main2 .conhecimento .renda svg circle{
+    stroke: #1466c3;
+    stroke-dashoffset: 35;
+    stroke-dasharray: 110;
+}
+
+.main2 .conhecimento .acessos svg circle {
+    stroke: #0000aa;
+}
+
+
+.main2 .conhecimento .progresso .numeros{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main2 .conhecimento small {
+    margin-top: 1.3rem;
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+    .main2 .conhecimento{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+.chart-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#rendimentoChart {
+    width: 300px;
+    height: 300px;
+}
+
+
