@@ -312,6 +312,10 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
+
+    .main2 {
+        margin-top: 1.4;
+    }
     .container {
         width: 94%;
         grid-template-columns: 7rem auto 23rem;
