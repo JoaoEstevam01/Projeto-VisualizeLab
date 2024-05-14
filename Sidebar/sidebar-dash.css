@@ -10,6 +10,7 @@
 body {
     background-image: url(/img/BackgroundVisualize.png);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     display: flex;
 
@@ -197,6 +198,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
+    margin-left: 20rem;
 }
 
 .main2 .conhecimento > div{
