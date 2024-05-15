@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
+    background-image: url(/img/BackgroundVisualize.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
-    min-height: 100vh;
-    background-color: #e3e9f7;
+
 }
 
 main {
@@ -20,19 +21,83 @@ main {
     padding-left: calc(82px + 20px);
 }
 
-/*Configurações da sidebar*/
+/*Time - Config*/
+
+.container {
+    margin: auto;
+}
+
+.titulo {
+    text-align: center;
+    padding: 50px;
+}
+
+.titulo p {
+    font-size: 5vw;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .icons {
+        grid-template-columns: 1fr; /* Altera para uma única coluna */
+    }
+}
+
+.icon {
+    padding-top: 5vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.icon img {
+    width: 55%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.icon h1 h2 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.icon i {
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 3vw;
+}
+
+.icon .subdescription {
+    font-size: 1rem;
+    color: #6b6b6b;
+}
+
+/*Configurações da Sidebar*/
 #sidebar {
-    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #161d2a;
-    height: 100vh;
+    height: 100vh;  
     border-radius: 0px 18px 18px 0px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
     transition: all .5s;
     min-width: 82px;
-    z-index: 2;
+    z-index: 999;
 }
 
 #sidebar_conteudo {
@@ -171,4 +236,3 @@ main {
     justify-content: flex-start;
     gap: 14px;
 }
-
