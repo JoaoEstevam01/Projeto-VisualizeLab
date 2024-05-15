@@ -177,175 +177,93 @@ main {
     gap: 14px;
 }
 
-/*Painel de vendas, despesas e renda*/
+/*Config mais vendidos*/
 
-.main2 {
-    margin-top: 1.4rem;
+@media screen and (max-width: 768px) {
+    .quadrado-individual {
+        width: calc(50% - 20px);
+    }
 }
 
-.main2 .data{
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem;
-}
-
-.main2 .date input[type="date"]{
-    background: transparent;
-    color: #000;
-}
-
-.main2 .conhecimento{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    margin-left: 17rem;
-}
-
-.main2 .conhecimento > div{
-    background: #fff ;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 1rem;
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-}
-
-.main2 .conhecimento > div:hover {
-    box-shadow: none;
-}
-
-.main2 .conhecimento > div span{
-    background-color: #02afc5;
-    padding: 0.3rem;
-    border-radius: 10%;
-    color: white;
-    font-size: 2rem;
-}
-
-.main2 .conhecimento > div.despesas span{
-    background-color: 	#7B2CBF;
-}
-
-.main2 .conhecimento > div.renda span{
-    background-color: #1466c3;
-}
-
-.main2 .conhecimento > div.acessos span{
-    background-color: #0000aa;
-}
-
-.main2 .conhecimento > div.chart-container span{
-    background-color: rgba(255, 99, 132, 1) ;
-}
-
-.main2 .conhecimento > div.grafico2 span {
-    background-color: #FDB32F;
-}
-
-.main2 .conhecimento > div .media{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.main2 .conhecimento h3{
-    margin: 1rem 0 0.6rem;
-    font-size: 1rem;
-}
-
-.main2 .conhecimento .progresso{
-    position: relative;
-    width: 92px;
-    height: 92px;
-    border-radius: 50%;
-}
-
-.main2 .conhecimento svg {
-    width: 7rem;
-    height: 7rem;
-}
-
-.main2 .conhecimento svg circle{
-    fill: none;
-    stroke: #02afc5;
-    stroke-width: 14;
-    stroke-linecap: round;
-    transform: translate(5px, 5px);
-    stroke-dasharray: 110;
-    stroke-dashoffset: 92;
-}
-
-.main2 .conhecimento .vendas svg circle {
-    stroke: #02afc5;
-    stroke-dashoffset: -30;
-    stroke-dasharray: 200;
-}
-
-.main2 .conhecimento .despesas svg circle {
-    stroke: #7B2CBF;
-    stroke-dashoffset: 20;
-    stroke-dasharray: 80;
-}
-
-.main2 .conhecimento .renda svg circle{
-    stroke: #1466c3;
-    stroke-dashoffset: 35;
-    stroke-dasharray: 110;
-}
-
-.main2 .conhecimento .acessos svg circle {
-    stroke: #0000aa;
-}
-
-
-.main2 .conhecimento .progresso .numeros{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+.Titulo {
+    text-align: center;
+    background-color: rgba(16, 16, 149, 0.873);
+    color: rgb(218, 218, 218);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
     width: 100%;
+    z-index: 0;
+}
+
+main {
+    margin-left: 80px;
+    padding: 60px 20px 20px 20px; 
+    position: relative;
+    z-index: 1;
+}
+
+.quadrados {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-.main2 .conhecimento small {
-    margin-top: 1.3rem;
-    display: block;
-}
-
-@media screen and (max-width: 1200px) {
-
-    .main2 {
-        margin-top: 1.4;
-    }
-    .container {
-        width: 94%;
-        grid-template-columns: 7rem auto 23rem;
-    }
-
-    .main2 .conhecimento{
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-}
-
-.chart-container {
-    max-width: 800px;
-    margin: 20px auto;
+.quadrado-individual {
+    background-color: rgb(255, 255, 255);
     padding: 20px;
-    border: 1px solid #ccc;
+    margin: 10px;
+    margin-top: 200px;
+    width: calc(20% - 20px);
+    max-width: 260px;
+    text-align: center;
     border-radius: 5px;
 }
 
-canvas {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
+.quadrado-individual img {
+    width: 50%;
+    margin-top: -130px;
 }
 
-#rendimentoChart {
-    width: 300px;
-    height: 300px;
+.Titulo-font{
+    font-size: medium;
 }
 
+.div1{
+    margin-top: 150px;
+    margin-left: 15rem;
+    margin-right: -13rem;
 
+}
+
+.texto-acima{
+    color: rgb(91, 91, 237);
+    background-color: rgba(126, 126, 231, 0.307);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;  
+    border-radius: 2px;
+}
+
+.texto-abaixo{
+    font-size: medium;
+}
+
+.quadrados{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.quadrado-individual{
+    background-color: rgb(255, 255, 255);
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 260px;
+    height: 250px;
+    text-align: center;
+    border-radius: 5px;
+}
