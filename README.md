@@ -56,7 +56,7 @@ Um agradecimento especial para aqueles que ajudaram no projeto/A special thanks 
     </td>
     <td align="center">
       <a href="https://github.com/eumura7">
-        <img src="/img/Edu.jpeg" alt="Edu"/><br>
+        <img src="/img/Edu.jpeg" width="100px;" alt="Edu"/><br>
         <sub>
           <b>Eduardo Honório</b>
         </sub>
