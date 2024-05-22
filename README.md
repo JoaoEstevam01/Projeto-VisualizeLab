@@ -8,14 +8,14 @@
 </p>
 
 <p align="center">
-    <b>Nosso dashboard foi criado com o objetivo de simplificar a gestão de dados para empresas locais, oferecendo uma plataforma eficaz de gerenciamento. Com uma interface simples de usar, nosso painel oferecerá uma visão abrangente do desempenho da empresa, permitindo uma análise simplificada e identificação rápida de áreas com potencial.</b>
-    <b>Esse projeto possui 7 telas, sendo elas:
+    <b>Our dashboard was created with the aim of simplifying data management for local businesses, offering an efficient management platform. With an easy-to-use interface, our panel will provide a comprehensive view of the company's performance, allowing for simplified analysis and quick identification of potential areas.</b>
+    <br><b>This project has 7 screens, which are:
     - Login
-    - Mais Vendidos
-    - Localização
-    - Notificações
-    - Perfil
-    - Início</b>
+    - Best Sellers
+    - Location
+    - Notifications
+    - Profile
+    - Home</b>
 </p>
 
 <p align="center">
