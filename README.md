@@ -9,6 +9,13 @@
 
 <p align="center">
     <b>Nosso dashboard foi criado com o objetivo de simplificar a gestão de dados para empresas locais, oferecendo uma plataforma eficaz de gerenciamento. Com uma interface simples de usar, nosso painel oferecerá uma visão abrangente do desempenho da empresa, permitindo uma análise simplificada e identificação rápida de áreas com potencial.</b>
+    <b>Esse projeto possui 7 telas, sendo elas:
+    - Login
+    - Mais Vendidos
+    - Localização
+    - Notificações
+    - Perfil
+    - Início</b>
 </p>
 
 <p align="center">
