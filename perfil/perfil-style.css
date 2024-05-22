@@ -228,7 +228,7 @@ main{
     
     display: flex; /* Enable flexbox layout */
     flex-direction: column; /* Arrange items vertically */
-    background-color: #e3e9f7;
+    background-color: white;
 }
   
 .config3 {
@@ -303,10 +303,12 @@ main{
 }
 
 .edicao-conta{
+    
     margin: 15px 0;
 }
 
 .form-container{
+    
     float: left
 }
 
@@ -316,9 +318,6 @@ main{
 
 }
 
-.form-container input[type="file"] {
-    display: none; /* Escondendo o campo de upload padrão */
-}
 
 .custom-upload-btn {
     background-color: #4CAF50;
@@ -364,9 +363,7 @@ main{
     
 }
 
-.form-container input[type="file"] {
-    display: none; /* Escondendo o campo de upload padrão */
-}
+
 
 .botao-upload {
     background-color: #4CAF50;
