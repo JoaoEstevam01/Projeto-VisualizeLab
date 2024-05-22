@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url(./img/BackgroundVisualize.png);
+    background-image: url(/img/BackgroundVisualize.png);
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -155,4 +155,3 @@ i {
     top: 226px;
 }
 
-/*Slidebar*/
