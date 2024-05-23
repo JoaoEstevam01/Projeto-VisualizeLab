@@ -23,7 +23,7 @@ main {
     padding-left: calc(82px + 20px);
 }
 
-/*Configurações da sidebar*/
+
 #sidebar {
     position: fixed;
     display: flex;
@@ -186,19 +186,16 @@ main {
 }
 
 .titulo {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
-    padding: 40px;
+    padding: 50px;
 }
 
 .mapa{
-    width: 800px;
-    height: 450px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     position: relative;
     width: 100%;
     padding-top: 0%;
-    box-shadow: 0 0 20px 0 rgb(90, 90, 90);
+    box-shadow: 0 0 20px 0 darkgrey;
 }
 
 .mapa iframe {
@@ -208,4 +205,3 @@ main {
     width: 100%;
     height: 100%;
 }
-
