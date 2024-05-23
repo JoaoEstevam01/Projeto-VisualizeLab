@@ -379,7 +379,38 @@ main{
     background-color: #45a049;
 }
 
+.telachat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px; 
+    transition: padding-left 0.3s ease;
+}
 
+
+#sidebar {
+    position: fixed;
+    height: 100%;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 0;
+    }
+    .telachat {
+        padding-left: 0;
+    }
+    .form-container {
+        width: 90%;
+    }
+}
+
+.form-container {
+    width: 400px;
+}
 
 
 
