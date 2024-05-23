@@ -3,6 +3,7 @@ document.getElementById('open_btn').addEventListener('click', function () {
     document.getElementById('sidebar').classList.toggle('open-sidebar');
 });
 
+//Alert box save e cancel
 function salvar() {
     alert("Tudo foi salvo com sucesso!");
 }
