@@ -14,4 +14,12 @@ function cancelar() {
     }
 }
 
+function cadastrar() {
+    if (confirm("Tem certeza que deseja cadastrar esse novo usuário?")) {
+        alert("Usuário cadastrado com sucesso!");
+    }
+}
+
+
+
 

@@ -175,6 +175,8 @@ main {
     gap: 14px;
 }
 
+/*Config localização*/
+
 #localiza{
     text-align: center;
     padding: 0px;
@@ -202,7 +204,6 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
 }
-

@@ -42,9 +42,12 @@ main {
     gap: 3rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .icons {
-        grid-template-columns: 1fr; /* Altera para uma única coluna */
+        grid-template-columns: 1fr;
+    }
+    .container {
+        margin-left: 5rem;
     }
 }
 

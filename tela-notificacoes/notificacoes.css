@@ -192,7 +192,7 @@ main {
     border-radius:1.2rem;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 11rem;
+    margin-left: 15rem;
     border:1px solid rgb(1, 26, 58);
     
 }
@@ -242,28 +242,28 @@ main{
 
 .notificaocontainer {
     
-    display: flex; /* Enable flexbox layout */
-    flex-direction: column; /* Arrange items vertically */
+    display: flex;
+    flex-direction: column;
     
 }
   
 .config3 {
     display: grid;
-    gap: 1.3rem; /* Espaço entre imagem e texto */
-    align-items: center; /* Alinhar verticalmente */
+    gap: 1.3rem;
+    align-items: center;
 }
 
 .imagem-texto {
     display: flex;
-    gap: 1rem; /* Espaço entre imagem e texto */
-    align-items: center; /* Alinhar verticalmente */
+    gap: 1rem;
+    align-items: center;
     margin-top: 5px;
 }
  
   .imagem-texto p {
-    margin: 0; /* Remove default paragraph margin */
-    font-size: 16px; /* Ajuste o tamanho da fonte */
-    align-self: center; /* Alinhar verticalmente no centro */
+    margin: 0;
+    font-size: 16px;
+    align-self: center;
   }
 
 hr{
@@ -284,5 +284,11 @@ p{
 
 .cabecadochat{
     color:#0156c4
+}
+
+@media screen and (max-width: 1200px) {
+    .notificaocontainer{
+        margin-left: 10rem;
+    }
 }
 

@@ -181,7 +181,7 @@ main {
 
 @media screen and (max-width: 768px) {
     .quadrado-individual {
-        width: calc(50% - 20px);
+        width: calc(20% - 20px);
     }
 }
 
@@ -250,11 +250,6 @@ main {
     font-size: medium;
 }
 
-.quadrados{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 .quadrado-individual{
     background-color: #d3d3d3;

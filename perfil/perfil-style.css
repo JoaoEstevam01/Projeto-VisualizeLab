@@ -226,29 +226,29 @@ main{
 
 .notificaocontainer {
     
-    display: flex; /* Enable flexbox layout */
-    flex-direction: column; /* Arrange items vertically */
+    display: flex;
+    flex-direction: column;
     background-color: white;
 }
   
 .config3 {
     display: grid;
-    gap: 1.3rem; /* Espaço entre imagem e texto */
-    align-items: center; /* Alinhar verticalmente */
+    gap: 1.3rem;
+    align-items: center;
 }
 
 .imagem-texto {
     display: flex;
-    gap: 1rem; /* Espaço entre imagem e texto */
-    align-items: center; /* Alinhar verticalmente */
+    gap: 1rem;
+    align-items: center; 
     margin-top: 5px;
 }
  
-  .imagem-texto p {
-    margin: 0; /* Remove default paragraph margin */
-    font-size: 16px; /* Ajuste o tamanho da fonte */
-    align-self: center; /* Alinhar verticalmente no centro */
-  }
+.imagem-texto p {
+    margin: 0;
+    font-size: 16px;
+    align-self: center;
+}
 
 .texto-header{
     display: flex;
@@ -298,6 +298,21 @@ main{
     box-shadow: rgba(0, 0, 0, 0.1);
 }
 
+.botao-cadastrar{
+    position: absolute;
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    border: 1px solid #0b5fdd;
+    border-radius: 2em;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: #536dfe;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
 .botao-save:hover{
     background-color: #405369;
 }
@@ -308,7 +323,6 @@ main{
 }
 
 .form-container{
-    
     float: left
 }
 
@@ -360,7 +374,6 @@ main{
     border: 2px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    
 }
 
 
@@ -406,12 +419,19 @@ main{
     .form-container {
         width: 90%;
     }
+    .notificaocontainer{
+        margin-left: 13rem;
+        width: 420px;
+    }
+
+    .form-container input[type="file"],
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+    width: 45%;
+    }
 }
 
 .form-container {
     width: 400px;
 }
-
-
-
-
