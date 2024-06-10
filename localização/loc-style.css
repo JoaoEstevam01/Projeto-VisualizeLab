@@ -35,7 +35,7 @@ main {
     position: relative;
     transition: all .5s;
     min-width: 82px;
-    z-index: 2;
+    z-index: 999;
 }
 
 #sidebar_conteudo {

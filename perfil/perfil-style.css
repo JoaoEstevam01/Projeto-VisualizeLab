@@ -410,9 +410,6 @@ main{
 
 
 @media screen and (max-width: 768px) {
-    #sidebar {
-        width: 0;
-    }
     .telachat {
         padding-left: 0;
     }
@@ -420,8 +417,28 @@ main{
         width: 90%;
     }
     .notificaocontainer{
-        margin-left: 13rem;
+        margin-left: 10rem;
         width: 420px;
+    }
+    .texto-header h1{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .botao-cancel{
+        width: 35%;
+    }
+    .botao-save{
+        width: 35%;
+    }
+    .botao-cadastrar{
+        width: 25%;
+    }
+    .foto-perfil{
+        display: flex; 
+        justify-content: center;
+    }
+    label{
+        font-size: 15px;
     }
 
     .form-container input[type="file"],
